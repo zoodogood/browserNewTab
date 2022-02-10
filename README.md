@@ -13,7 +13,7 @@ https://zoodogood.github.io/browserNewTab
 Если приятные темные тона и мой дизайн понравились, дерзай дальше.
 
 2. Чтобы изменить вкладку по умолчанию придется установить одно из десятка расширенний.  
-Я советую [New Tab URL](https://chrome.google.com/webstore/detail/new-tab-url/fjmejipbaegkajpfkghaapfhdempldpd) так как при открытии новой вкладки оно фокусируется на поисковом поле браузера, что просто необходимо.
+Я советую [New Tab Changer](https://chrome.google.com/webstore/detail/new-tab-changer/occbjkhimchkolibngmcefpjlbknggfh/related) так как при открытии новой вкладки оно фокусируется на поисковом поле браузера, что просто необходимо.
 3. По своему желанию можете установить тему [Material Dark](https://chrome.google.com/webstore/detail/material-dark/npadhaijchjemiifipabpmeebeelbmpd?hl=ru), которая хорошо сочетается с данной страницей.
 
 

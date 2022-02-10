@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #343134;
+  background-image: radial-gradient(transparent 50%, rgba(0,0,0,0.2)), linear-gradient(transparent, rgba(0,0,0,0.2))
+}

@@ -1,2 +1,1 @@
-
-123
+console.log(window.location);

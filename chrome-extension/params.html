@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset = "utf-8"/>
+
+<head>
+  <meta charset="utf-8">
+  <title>Настр. новой вкладки</title>
+  <link rel="icon" href="icons/icon-128.png" type="image/icon">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; color: white; }
+  ::placeholder { color: cornflowerblue; }
+  body { background: #343134; }
+  section { min-height: 100vh;  padding-bottom: 20vh; flex-direction: column; justify-content: center; align-items: center; }
+  main { padding-top: 7vh; padding-left: 2vw; flex-direction: column; align-items: flex-start; }
+  h1 { font-size: 4em; margin-bottom: 5vh; }
+  p { letter-spacing: 1px; font-size: 1.1em; }
+  span { letter-spacing: 1px; }
+  input { background: none; outline: none; border: 1px solid cornflowerblue; color: cornflowerblue; }
+  section > input { width: 60vw; height: 9vh; font-size: 3em; padding: 2vh; }
+  button { transition: padding 300ms; letter-spacing: 1px; cursor: pointer; border-radius: 100vmax; margin-top: 1vh; margin-bottom: 1vh; background: Indigo; border: 1px solid Indigo; font-size: var( --size ); padding: var( --size ); }
+  button:hover { padding-left: calc( var( --size ) * 3 ); padding-right: calc( var( --size ) * 3 ); }
+  main > input { padding: 3px; border-top: none; border-left: none; border-right: none; }
+</style>
+</head>
+<body>
+  <section style = "display: none;">
+    <h1>Укажите URL вкладки-"по умолчанию"</h1>
+    <input type="text" title = "Укажите URL сайта, который хотите видеть при открытии новой вкладки" placeholder = "https...">
+    <button style = "--size: 22px; display: none;" type="button">Продолжим</button>
+  </section>
+  <main style = "display: none;">
+    <h2>Настройте под себя</h2>
+    <br>
+    <p>Основной URL:</p>
+    <input data-parse = "storage" data-storage = "TabPageURL" data-target = "value"></input>
+    <p>Переходить по указному адресу</p>
+    <input type="checkbox">
+
+    <button id = "save" style = "--size: 12px;" type = "button">Сохранить все изменения и выйти</button>
+  </main>
+</body>
+<script src = "params.js"></script>
+</html>

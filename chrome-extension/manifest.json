@@ -1,0 +1,17 @@
+{
+  "name": "BrowserNewTab",
+  "description": "New Tab",
+  "author": "zoodogood/browserNewTab",
+  "chrome_url_overrides": {
+    "newtab": "tab.html"
+  },
+  "options_page": "params.html",
+  "offline_enabled": false,
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "manifest_version": 3,
+  "version": "0.1"
+}

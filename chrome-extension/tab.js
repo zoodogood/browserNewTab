@@ -16,13 +16,23 @@ class ReceiveTitle {
   install({ title, icon }){
     if (title){
       let node = document.querySelector("head title");
-      if (!node)
-        document.head.append(
-          node = document.createElement("title")
-        );
+      if (!node){
+        node = document.createElement("title");
+        document.head.append(node);
+      }
 
       node.textContent = title;
-      console.log(title);
+    }
+
+    if (icon){
+      let node = document.querySelector("head link[rel=icon]");
+      if (!node){
+        node = document.createElement("link");
+        node.setAttribute("rel", "icon");
+        document.head.append(node);
+      }
+
+      node.setAttribute("href", icon);
     }
   }
 
@@ -36,11 +46,9 @@ class ReceiveTitle {
 
 // document.querySelector("iframe").contentWindow.postMessage("123");
 
-// let titlePromise = fetch(`https://url-title.vercel.app/${ pageURL.replace(/https:\/\/|http:\/\//, "") }`)
-//   .then(res => res.text())
-//   .then(console.log);
+let titlePromise = fetch(`https://url-title.vercel.app/${ pageURL.replace(/https:\/\/|http:\/\//, "") }`)
+  .then(res => res.text())
+  .then(title => 123);
 
 let obj = { title: "Новая вкладка", icon: "icons/icon-128.ico" };
-console.log(obj);
-console.log("Новая вкладка");
 new ReceiveTitle().install(obj)

@@ -3,6 +3,7 @@ if (!localStorage.TabPageURL)
 
 
 const pageURL = localStorage.getItem("TabPageURL");
+document.querySelector("iframe").setAttribute("src", pageURL);
 
 class ReceiveTitle {
   constructor({ presetCached = true } = {}){
@@ -38,7 +39,7 @@ class ReceiveTitle {
 
   static DEFAULT = {
     title: "Новая вкладка",
-    icon:  "icons/icon-128.ico"
+    icon:  "icons/favicon.ico"
   }
 }
 
@@ -50,5 +51,4 @@ let titlePromise = fetch(`https://url-title.vercel.app/${ pageURL.replace(/https
   .then(res => res.text())
   .then(title => 123);
 
-let obj = { title: "Новая вкладка", icon: "icons/icon-128.ico" };
-new ReceiveTitle().install(obj)
+new ReceiveTitle().install(ReceiveTitle.DEFAULT);

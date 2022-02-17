@@ -42,15 +42,14 @@ class ParamsParser {
       this.fetch();
 
     for (const node of this.#nodes){
-      const target = node.getAttribute( this.#attr );
-      //const
-      let value = this.constructor.SOURCES.
+      const [target, property] = node.getAttribute( "data-target" )
+        .split(":");
 
-      if ( !value.startsWith("{") || !value.endsWith("}") )
-        continue;
+      const valueSource = node.getAttribute("data-parse");
+      const value = this.constructor.SOURCES[valueSource]
+        .get( node.getAttribute(`data-${ valueSource }`) );
 
-      value = localStorage.getItem( value.slice(1, -1).trim() );
-      node.value = value;
+      this.constructor.PROPERTIES[target].set(node, property, value);
     }
 
   }

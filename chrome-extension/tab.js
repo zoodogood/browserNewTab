@@ -47,8 +47,8 @@ class ReceiveTitle {
 
 // document.querySelector("iframe").contentWindow.postMessage("123");
 
-let titlePromise = fetch(`https://url-title.vercel.app/${ pageURL.replace(/https:\/\/|http:\/\//, "") }`)
-  .then(res => res.text())
-  .then(title => 123);
-
+// let titlePromise = fetch(`https://url-title.vercel.app/${ pageURL.replace(/https:\/\/|http:\/\//, "") }`)
+//   .then(res => res.text())
+//   .then(title => 123);
+//
 new ReceiveTitle().install(ReceiveTitle.DEFAULT);

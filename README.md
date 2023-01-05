@@ -16,6 +16,12 @@ https://zoodogood.github.io/browserNewTab
 Я советую [New Tab Changer](https://chrome.google.com/webstore/detail/new-tab-changer/occbjkhimchkolibngmcefpjlbknggfh/related) так как при открытии новой вкладки оно фокусируется на поисковом поле браузера, что просто необходимо.
 3. По своему желанию можете установить тему [Material Dark](https://chrome.google.com/webstore/detail/material-dark/npadhaijchjemiifipabpmeebeelbmpd?hl=ru), которая хорошо сочетается с данной страницей.
 
+### Обновлено 2022:
+1. Загрузите файлы репозитория на своё устройство  
+
+2. Перейдите на страницу [chrome://extensions/](chrome://extensions/) и активируйте ползунок "Режим разработчка", он справа сверху.
+
+3. В противоположной части экрана выберите "Загрузить распакованное расширение"
 
 В будущем я планирую добавить возможность кастомизации и некоторые другие фишки.  
 Можете требовать добавить новые функции, буду только рад поспособствовать Вашему комфорту

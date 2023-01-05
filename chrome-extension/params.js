@@ -7,15 +7,16 @@ class SaveManager {
   constructor({ buttonId, attributeName }){
     this.#button = document.querySelector(`#${ buttonId }`);
     this.#attr = attributeName;
+    this.handleClicks();
   }
 
-  clickHandler(){
-    this.#button.addEventListener("click", this.save.bind(this))
+  handleClicks(){
+    this.#button.addEventListener("click", this.save.bind(this));
   }
 
   save(){
-     const nodes = document.querySelectorAll( `* [${ this.#attr }]` );
-
+    const nodes = document.querySelectorAll( `* [${ this.#attr }]` );
+    console.log(nodes);
 
   }
 }
